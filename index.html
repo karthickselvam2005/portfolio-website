@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karthick Selvam M| Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Karthick Selvam M</div>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="centered">
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Karthick Selvam M</span></h1>
+      <p><span id="typing"></span></p>
+      <button onclick="scrollToSection('projects')">Explore Projects</button>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Aspiring Full Stack Developer and Data Science enthusiast, passionate about building responsive web applications
+      and exploring real-world data through visualization. Currently pursuing a B.Sc. in AI & ML and continuously
+      growing my technical skills through hands-on projects.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Python (Beginner)</div>
+      <div class="skill-card">React</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card" onclick="location.href='projects/data_visualization.html'">
+      <h3>📊 Data Science Visualizations</h3>
+      <p>Click to see insights and charts made using Python libraries.</p>
+    </div>
+
+    <div class="project-card" onclick="location.href='index.html'">
+      <h3>🌐 Portfolio Website</h3>
+      <p>Explore the structure and code of this personal portfolio site.</p>
+    </div>
+
+    <div class="project-card" onclick="location.href='projects/stock-predictor.html'">
+      <h3>📈 Stock Prediction Bot (Ongoing)</h3>
+      <p>Go through ML predictions using historical stock data and Streamlit.</p>
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="return handleSubmit(event)">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <textarea placeholder="Your Message..." rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Karthick Selvam M| Built with Self</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
